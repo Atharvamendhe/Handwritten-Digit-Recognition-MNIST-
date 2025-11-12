@@ -1,20 +1,32 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Digit Recognizer | Atharva</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Handwritten Digit Recognition</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="container">
     <h1>🧠 Handwritten Digit Recognition</h1>
-    <canvas id="canvas" width="280" height="280"></canvas>
-    <div class="buttons">
-      <button onclick="clearCanvas()">Clear</button>
-      <button onclick="predictDigit()">Predict</button>
+
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="280" height="280"></canvas>
     </div>
-    <h2 id="result">Predicted Digit: -</h2>
+
+    <div class="controls">
+      <button id="clearBtn" class="btn">Clear</button>
+      <button id="predictBtn" class="btn primary">Predict</button>
+    </div>
+
+    <div class="result">
+      <p id="result">Predicted Digit: -</p>
+    </div>
+
+    <footer class="footer">
+      <small>Model: CNN trained on MNIST • Built by Atharva</small>
+    </footer>
   </div>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
