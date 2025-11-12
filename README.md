@@ -24,12 +24,12 @@ An interactive AI web app that recognizes handwritten digits (0–9) using a **C
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/<your-username>/mnist-digit-recognition.git
+git clone https://github.com/Atharvamendhe/mnist-digit-recognition.git
 cd mnist-digit-recognition
 
 2️⃣ Create Virtual Environment
 python -m venv venv
-venv\Scripts\activate       # Windows
+venv\Scripts\activate     
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
