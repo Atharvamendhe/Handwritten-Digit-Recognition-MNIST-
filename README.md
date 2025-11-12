@@ -19,3 +19,23 @@ An interactive AI web app that recognizes handwritten digits (0–9) using a **C
 **Dataset:** MNIST Handwritten Digits  
 
 ---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/<your-username>/mnist-digit-recognition.git
+cd mnist-digit-recognition
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate       # Windows
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Train Model (optional)
+python train_model.py
+
+5️⃣ Run App
+python app.py
