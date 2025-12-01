@@ -25,7 +25,7 @@ An interactive AI web app that recognizes handwritten digits (0–9) using a **C
 ### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/Atharvamendhe/Handwritten-Digit-Recognition-MNIST-
-cd mnist-digit-recognition
+cd mnist-web-app
 
 2️⃣ Create Virtual Environment
 python -m venv venv
